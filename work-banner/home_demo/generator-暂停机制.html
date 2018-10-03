@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    /*
+     可以暂停的函数，当直接调用函数的时候，内部执行开始，但是在一开
+     始的位置是暂停状态，需要手动释放暂停状态才能进行下面代码的执
+     行
+     */
+    function* gen() {
+        let l = 0;
+        for(var i = 0;i<=10;i++){
+            console.log(i);
+            //yield关键字只能在generator函数内部使用
+            //作用:可以在指定位置在此暂停执行状态
+            yield l++;
+            console.log(l);
+        }
+    }
+    let get = gen();
+    get.next();
+    get.next();
+    get.next();
+</script>
+</html>

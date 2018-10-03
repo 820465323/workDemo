@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./vue.js"></script>
+    <style type="text/css">
+        #divdiv:hover>#div2{
+            display: block;
+        }
+        #div2{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <!--父组件-->
+        <btn></btn>
+    </div>
+</body>
+<script type="text/javascript">
+
+    //视图区(子组件)
+    let imgView = {
+        props:[`imgview`],
+        //创建字符串模版
+        //实现上传图片多删:将数组内的数据和下标
+        // 在父组件的div中v-for遍历后放入自定属性中,
+        // 再将此数据放入单击时间里
+        //通过$emit存放数据传,将此组件传入父组件中
+        //传入父组件后通过$emit中定义的事件和数据直接获取并删除
+        template:`<div id="divdiv" style="display: inline-block;position: relative;border: 1px solid black;width: 200px;height: 200px">
+        <img  id="imgfile"
+        :src="imgview.url" alt=""
+        style=""/>
+        <div id="div2" style="position: absolute;border: 1px solid red;width: 80%;
+        height: 20px;margin-bottom: 0px;margin-top: -20%;" @click="dele(imgview.index)">删除</div>
+        </div>`,
+        methods:{
+            dele(index){
+                console.log(index);
+                this.$emit('dele',index);
+            }
+        }
+    }
+
+    //自定义父组件
+    let button = {
+        //创建字符串模版
+        //因为子组件可能有多张图片,所以需要v-for循环遍历出所有的baseUrl给子img
+        //传值流程   1.v-for循环遍历baseUrl
+        // 2.:imgview接收for循环的参数
+        // 3.:imgview的参数放入子img中的src内
+        template:`<div><input multiple type="file" id="files" @change="changefile"/>
+        <vw @dele="dele" v-for="(u,index) in baseUrl" :imgview="{url:u,index:index}"></vw></div>`,
+        components:{vw:imgView},
+        data(){
+            //数组里承载多个转换后的base的图片路径
+            //然后传递给<view/>组件
+            return {baseUrl:[]}
+        },
+        methods:{
+            changefile(){
+                //this=vue
+                let t = this;
+                let imgfile = document.querySelector('#files');
+                //将img变为数组结构
+                let fe = imgfile.files;
+                console.log(fe);
+                for(let i = 0;i<fe.length;i++){
+                    let reader = new FileReader();
+                    reader.readAsDataURL(fe[i]);
+                    reader.onload = function () {
+                        //将图片转为字符串后放入集合中
+                        t.baseUrl.push(this.result);
+                        console.log(t.baseUrl)
+                    }
+                }
+            },
+            dele(index){
+                console.log(index);
+                //根据下标删除数据,从index开始 删除1-index个
+                this.baseUrl.splice(index,1);
+            }
+        }
+    }
+
+    var vue = new Vue({
+        el:'#div1',
+        data:{
+
+        },
+        components:{btn:button}
+    })
+</script>
+</html>

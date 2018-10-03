@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    var user = {name:`zzw`,age:18};
+    var user2 = {name:`zzw2`,age:21};
+    for(let us in user){
+        let val = user[us];
+        Object.defineProperty(user,us,{
+            //是否可以通过delete 删除对应的key
+            configurable:true,
+
+            //是否可以通过for in遍历出对应的key
+            enumerable:true,
+
+            set(value){
+                console.log(`set = `+value)
+                v = value;
+            },
+            get(){
+                console.log(`get`)
+                return v;
+            }
+        })
+    }
+    /*delete user[`name`];
+    for(let u in user){
+        console.log(u);
+    }*/
+    user.age =21;
+    console.log(user.age);
+</script>
+</html>

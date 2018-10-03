@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="tb1">
+<table border="1">
+    <tr>
+        <td>姓名</td>
+        <td>年龄</td>
+    </tr>
+    <tr v-for="user in users">
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+    </tr>
+    <tr v-for="(arr,index) in arr">
+        <td>{{arr}}</td>
+        <td>{{index}}</td>
+    </tr>
+</table>
+
+<ul>
+    <li v-if="age==18">等于18</li>
+    <li v-if="age!=18">等于50</li>
+</ul>
+    <div id="div1" @click="add(1)">{{total}}</div>
+    <input type="text" v-model="age">
+</div>
+</body>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script type="text/javascript">
+    var vue = new Vue({
+            el:'#tb1',
+            data:{
+                users:[{name:'zzw',age:18},{name:'zzw3',age:20}],
+                arr:[1,2,3,4,5],
+                age:50
+            },
+        methods:{
+            add:function (data) {
+                this.age++;
+            }
+        },
+        computed:{
+             total:function () {
+                 return this.age;
+             }   
+        }
+    });
+</script>
+</html>

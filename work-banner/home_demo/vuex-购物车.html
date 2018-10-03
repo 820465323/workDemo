@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./vue.js"></script>
+    <script src="./node_modules/vue-router/dist/vuex.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<div id="div1">
+    <cart></cart>
+    <goods></goods>
+</div>
+</body>
+<script type="text/javascript">
+    //Store就是用来储存组件与组件之前传递的信息
+    const st = new Vuex.Store({
+        //state是状态机,也是一个针对组件的全局对象,承载需要传递对象的名称和默认值
+        state:{
+            //购物车状态
+            cartStatus:false,
+            price:0
+        },
+        //motations:定义所有相关状态机的方法
+        mutations:{
+            //操作状态机,并进行值传递
+            //peyload为子插件commit向父插件传递的值
+            updateCartStatus(state,peyload){
+            state.cartStatus = !st.state.cartStatus;
+            console.log(`peyload  = `+peyload);
+            console.log(state.cartStatus);
+        },
+        },
+        //getters 可以在状态机的基础上进行运算
+        getters:{
+            //ctx:指的是状态机的Store对象中的所有,可以调用Store内部的所有方法
+            cartStatusGet(ctx,price){
+                console.log(ctx);
+                return ctx.cartStatus+99;
+            }
+        }
+    });
+
+    //商品
+    var goods = {
+        template:`<div><a href="javascript:void(0)" @click="send()">加入购物车</a>
+        <a href="javascript:void(0)" @click="cartStatusGet">CartStatusGet</a></div>`,
+        methods:{
+            send(){
+                //commit操作updateCartStatus从而操作state内部的属性
+                //第二个参数可以直接传递到updateCartStatus中
+                st.commit(`updateCartStatus`,{img:`./goos.jpg`,goodId:`1`});
+                console.log(`购物车状态=   `+st.state.cartStatus);
+            },
+            cartStatusGet(){
+                console.log(st.getters.cartStatusGet);
+            }
+        }
+    };
+
+    //购物车
+    var cart = {
+        template: `<div class="">我是购物车 ===={{cartst}}</div>`,
+        //computed:动态计算属性,这里不用data是因为在data内部中的变量只能指向当前组件,
+        // 而不指向vuex所以vuex无法控制data中的状态机
+        computed:{
+            cartst(){
+                return st.state.cartStatus;
+            }
+        },
+        methods:{
+        }
+    };
+
+    var vue = new Vue({
+        el:`#div1`,
+        components:{cart:cart,goods:goods}
+    })
+</script>
+</html>

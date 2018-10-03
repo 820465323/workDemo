@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<div id="app">
+<a href="javascript:void(0)" @click="select">查询</a>
+    <ul v-for="(m,index) in mongo.body" :key="index">
+        <li>{{m._id}}</li>
+        <li>{{m.name}}</li>
+        <li>{{m}}</li>
+    </ul>
+</div>
+
+</body>
+<script src="jquery.js"></script>
+<script src="vue.js"></script>
+<script src="vue-resource.js"></script>
+<script>
+   var vue = new Vue({
+        el:'#app',
+        data:{
+            mongo:{}
+        },
+        methods:{
+            select:function () {
+                this.$http.get("http://localhost:3000/selectName?id="+"5b471e8ab8678f15c8712be9").then(function (res) {
+                    this.mongo = res;
+                        console.log(res.body);
+                });
+                }
+            }
+   });
+
+</script>
+</html>

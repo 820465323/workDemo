@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <!--这个js库依赖jQuery，必须放jQuery下面，bundle表示库的集合，bootstrap还依赖另外几个小的js库-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</head>
+<body>
+<!--使用限宽容器的class-->
+<div class="container" style="background-color: saddlebrown">11</div>
+<!--全屏满宽容器-->
+<div class="container-fluid" style="background-color: darkcyan">222</div>
+<hr/>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 hidden-xs" style="border: 1px solid silver">
+            <h1>侧边栏</h1>
+            <p>袜子山东矿机爱神的箭看哈四大皆空哈数据库等哈数据库的哈手机客户端</p>
+        </div>
+        <div class="col-md-9" style="border: 1px solid salmon">
+            <h1>主体内容</h1>
+            <p>奥斯卡接电话卡手机号大健康山东矿机爱神的箭卡仕达卡就是</p>
+            <div class="visible-xs alert-info">
+                <h1>小死了 缩小到了手机尺寸</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>主体内容</h1>
+                    <p>奥斯卡接电话卡手机号大健康山东矿机爱神的箭卡仕达卡就是</p>
+                </div>
+                <div class="col-md-4">
+                    <h1>侧边栏</h1>
+                    <p>袜子山东矿机爱神的箭看哈四大皆空哈数据库等哈数据库的哈手机客户端</p>
+                </div>
+                <div class="col-md-4 alert-info">
+                    <h1>侧边栏4</h1>
+                    <p>袜子山东矿机爱神的箭看哈四大皆空哈数据库等哈数据库的哈手机客户端</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-sm-3 col-3" style="border: 1px solid seagreen">左侧栏</div>
+        <div class="col-sm-9 col-9" style="border: 1px solid brown">主体栏</div>
+    </div>
+</div>
+<hr/>
+<div>
+    <div class="row">
+        <div class="col-3" style="background-color: silver">col-3</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8" style="background-color: bisque">col-sm-8</div>
+    </div>
+    <div class="row">
+        <div class="col-md-9" style="background-color: cadetblue">col-md-9</div>
+    </div>
+
+    <!--每行的列等宽-->
+    <div class="container-fluid">
+        <div class="row">
+            <!--在任意屏幕宽度中，每部分占4列（12 ÷ 3 = 4）-->
+            <div class="col red">内容1</div>
+            <div class="col blue">内容2</div>
+            <div class="col red">内容3</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

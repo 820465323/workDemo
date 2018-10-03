@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+11
+    </div>
+</body>
+<script src="moment.js"></script>
+
+<script type="text/javascript">
+    let date = new Date();
+    console.log(date);
+    //moment获取当前时间
+    let format = moment().format('YYYY年MM月DD日 HH:mm:ss 星期dd');
+    //将指定字符串转化为日期
+    let date2 = moment('2018-12-08').format('YYYY年MM月DD日 HH:mm:ss 周dd');
+    console.log(format);
+    console.log(date2);
+    let now = moment();
+    console.log(now.format('YYYY-MM-DD HH:mm:ss'));
+    //相对时间
+    let date3 = moment('2017-12-8','YYYY-MM-DD HH:mm:ss').fromNow();
+    console.log(date3);
+</script>
+</html>

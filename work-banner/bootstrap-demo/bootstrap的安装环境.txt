@@ -1,0 +1,5 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <!--这个js库依赖jQuery，必须放jQuery下面，bundle表示库的集合，bootstrap还依赖另外几个小的js库-->
+    <script src="bootstrap.bundle.min.js"></script>

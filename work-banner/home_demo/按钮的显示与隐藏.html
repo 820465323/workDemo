@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .goods{
+            width: 300px;
+            height: 300px;
+            border:1px solid red;
+        }
+
+        .goods_price{
+            width: 100%;
+            height: 40px;
+            border: 1px solid red;
+            margin-top: 86%;
+        }
+
+        .goods_button{
+            width: 100%;
+            height: 40px;
+            border: 1px solid red;
+            margin-top: 86%;
+            display: none;
+        }
+        .goods:hover div.goods_button{
+            display: block;
+        }
+        .goods:hover div.goods_price{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="goods">
+
+    <div class="goods_price">价格 100</div>
+    <div class="goods_button">按钮区域</div>
+</div>
+</body>
+</html>

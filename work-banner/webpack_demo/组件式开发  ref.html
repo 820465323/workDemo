@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/vue-resource/dist/vue-resource.js"></script>
+</head>
+<body>
+<div id="app">
+
+
+</div>
+</body>
+<script>
+    /*var data = {age:11};*/
+    /*var vuex = {};*/
+    var goods = {
+        props:["myProps"],
+        template:"<h1 >我就是商品</h1>",
+        data:function () {
+            return {age:11};
+        },
+        created(){
+            this.$http.get("http://localhost:8888/users",{query:{age:18}}).then(function (res) {
+                console.log(res.body);
+            },function (err) {
+                console.log(err);
+            })
+
+          /*  Vue.http.post("http://localhost:3000/users",{name:"",age:18}).then(function (res) {
+                console.log(res.body);
+            },function (err) {
+                console.log(err);
+            })*/
+        }
+
+    }
+    var as = new Vue({
+        el:"#app",
+        components:{goods:goods},
+        template:` <goods></goods>`
+    })
+
+
+</script>
+</html>

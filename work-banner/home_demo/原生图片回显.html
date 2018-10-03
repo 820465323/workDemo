@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <input type="file" id="files">
+        <img class="imgclass" src="" alt="">
+</body>
+<script type="text/javascript">
+    let file = document.querySelector(`#files`);
+    file.onchange = function () {
+        //获取文件对象
+        let file2 = file.files[0];
+        console.log(file2);
+        let reader = new FileReader();
+        //FileReader 能够将图片转换为base64 字符串
+        reader.readAsDataURL(file2);
+        reader.onload = function (res) {
+            let retule = this.result;
+            //获取img标签
+            let img = document.querySelector(`.imgclass`);
+            //给img标签的src和style赋值
+            img.src=retule;
+            img.style=`width:200px;height:200px`
+        }
+    }
+</script>
+</html>

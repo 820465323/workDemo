@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>姓名----年龄</li>
+    <% for(var i=0;i<users.length;i++){%>
+    <li><%= users[i].name%>----<%= users[i].age%> <a href="/findByIndex?index=<%= i %>">查询</a></li>
+    <%}%>
+
+</ul>
+<h1><%= name%></h1>
+</body>
+</html>

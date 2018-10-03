@@ -1,0 +1,13 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "busboy": "file:node_modules/busboy",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "morgan": "^1.9.0",
+    "request": "^2.88.0"
+  }
+}

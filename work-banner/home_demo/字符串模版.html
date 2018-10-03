@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    let  name = `zzw`;
+    let str = `长长的羊角,圆圆的"猪头"${name}`;
+    console.log(str);
+
+    //默认值
+    function two(a=1,b=2){
+        //a = a || 1;
+        console.log(a,b);//结果依然是11，22
+    }
+    two(11,22);
+</script>
+</html>

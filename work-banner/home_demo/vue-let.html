@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<!--let: 作用域划为块,let声明的变量只属于当前的代码块-->
+<script type="text/javascript">
+    {var a = `这是a`;
+    let a2 = `这是let`;}
+    {
+        console.log(a);
+        //let修饰的变量为单独代码块,不再一个代码块内不能调用
+       /* console.log(a2);*/
+    }
+
+    var arr = [];
+    var str = `123465789`;
+    for(var i = 0;i<str.length;i++){
+        arr.push(str[i]);
+    };
+    console.log(arr);
+</script>
+</html>

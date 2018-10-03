@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="./vue.js"></script>
+    <style type="text/css">
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo2">
+        <!--模拟购物车按钮练习-->
+        <a href="javascript:void(0)" @click="add">+</a>
+        {{i}}
+        <a href="javascript:void(0)" @click="subtract">-</a>
+        <a href="javascript:void(0)" @click="destory">摧毁</a><br/>
+        <input type="text"  v-model="i" placeholder="请输入数量">
+
+        <!--ajax练习-->
+        <ul>
+            <li v-for="u in user">
+            {{u}}
+            </li>
+        </ul>
+        <br/>
+
+        <!--事件冒泡练习-->
+        <div @click="did" style="border: 1px solid red;width: 50px;height: 50px;">
+            <h4 @click="son">子框</h4>
+        </div>
+        <br/>
+        <cart></cart>
+    </div>
+</body>
+
+<script type="text/javascript">
+    //分发事件
+    //自定义多个组件
+    var goods = {
+        //自定义标签内部属性
+        props:['goods1'],
+        //创建模版
+        template:'<div style="border: 1px solid black" @click="add">jsgoods {{price}} {{goods1}}</div>',
+        data:function () {
+            return {price:1}
+        },
+        methods:{
+            add:function () {
+                this.price++;
+                //分发事件
+                this.$emit("emit","emit传递的值");
+            }
+        }
+    }
+    
+    //购物车组件 流程: <cart>-vue中的components-var cart-components:{jsgoods:goods}-var goods
+    //ref:子组件
+    var cart = {
+        //父向子传值
+        //jsgoods :goods1="prict"></jsgoods> 中的:goods1为子框自定义属性的值
+        template:'<div @click="add" style="border: 1px solid red"><jsgoods ref="childs" :goods1="prict" @emit="onemit"></jsgoods><input type="text" v-model="prict"/></div>',
+        data:function () {
+            return {prict:0}
+        },
+        components:{jsgoods:goods},
+        methods:{
+            add:function () {
+                this.prict++;
+                //直接获取childs,意味着直接获取子组件的对象
+                console.log('ref =   '+this.$refs.childs.price);
+            },
+            onemit:function (val) {
+                console.log(val);
+            }
+        }
+    }
+    
+    var demo2 = {
+        template:"<div id='divjs'>11111</div>"
+    }
+
+    var vue  = new Vue({
+        el:'#demo2',
+        data:{
+            i:0,
+            user:[{name:'zzw',age:16},
+                   {name:'zzw2',age:17},
+                    {name:'zzw3',age:18}]
+        },
+        //将模版组件放入vue中
+        components:{cart:cart},
+
+        methods:{
+            //购物车+
+            add:function () {
+                this.i++;
+            },
+            //购物车-
+            subtract:function () {
+                if(this.i==0){
+                    this.i=0;
+                }else {
+                    this.i--;
+                }
+            },
+            destory:function () {
+                this.$destroy();
+            },
+            did:function () {
+                console.log('父框触发');
+            },
+            son:function () {
+                console.log('子框触发');
+            }
+        },
+        //生命周期开始..
+        beforeCreate:function () {
+            console.log('所有vue属性构造生成之前触发');
+        },
+        created:function () {
+           /* $.get("http://localhost:3000/user",function (data) {
+                this.user = data;
+            }.bind(this));*/
+          console.log('所有vue属性构造生成后，可以正常使用data，methods等属性时触发');
+        },
+        beforeMount:function () {
+            console.log('虚拟dom替换真实dom之前 这时候组件没有替换真实dom，不能操作真实dom时触发')
+        },
+        mounted:function () {
+            console.log('虚拟dom替换真实dom之后，这是可以操作组件中设置好的相关属性 可以操作真实dom时触发')
+        },
+        beforeUpdate:function () {
+            console.log('和数据没有关系，描述的是数据变更前虚拟dom还没有替换真实dom时触发')
+        },
+        updated:function () {
+            console.log('描述虚拟dom替换真实dom之后触发')
+        },
+        beforeDestroy:function () {
+            console.log('vue组件销毁之前触发')
+        },
+        destoryed:function () {
+            console.log('vue组件销毁之后触发')
+        }
+    })
+</script>
+</html>

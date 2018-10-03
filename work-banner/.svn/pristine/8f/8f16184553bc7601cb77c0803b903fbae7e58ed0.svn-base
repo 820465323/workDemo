@@ -1,0 +1,161 @@
+package com.baizhi.service;
+
+import java.util.List;
+import com.baizhi.dao.CarsDAO;
+import com.baizhi.entity.Cars;
+
+public class CarsService {
+	private CarsDAO carsDAO;
+
+	public CarsDAO getCarsDAO() {
+		return carsDAO;
+	}
+
+	public void setCarsDAO(CarsDAO carsDAO) {
+		this.carsDAO = carsDAO;
+	}
+	
+	private Cars cars;
+	public Cars getCars() {
+		return cars;
+	}
+
+	public void setCars(Cars cars) {
+		this.cars = cars;
+	}
+
+	/**
+	 * 查询
+	 */
+	List<Cars> queryall;
+	public List<Cars> queryAll(){
+			try{
+				queryall = carsDAO.queryAll();
+				for(Cars c :queryall){
+				System.out.println("service查询得到=   "+c);
+			}
+			}catch(Exception e){
+				e.printStackTrace();
+				throw new RuntimeException("查询失败");
+			}
+			return queryall;
+	}
+	
+	/**
+	 * 添加
+	 */
+	public void addCarService(Cars cars){
+		try {
+			carsDAO.addCars(cars);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("添加失败");
+		}
+	}
+	
+	/**
+	 * 修改
+	 */
+	public void updateCarService(Cars cars){
+		try {
+			carsDAO.updateCars(cars);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("修改失败");
+		}
+	}
+	
+	/**
+	 * 删除
+	 */
+	public void deleteCarService(Integer cid){
+		try {
+			carsDAO.deleteCars(cid);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("删除失败");
+		}
+	}
+	
+	/**
+	 *模糊品名
+	 * @return 
+	 */
+	public List<Cars> queryCbrandService(String cbrand){
+		try {
+			queryall = carsDAO.queryCbrand(cbrand);
+		}catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("模糊查询品名失败");
+		}
+		return queryall;
+	}
+	
+	/**
+	 * 批量删除
+	 */
+	public void deletAllService(List<Integer> cid){
+		try {
+			carsDAO.deleteAll(cid);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("批量删除失败");
+		}
+	}
+	
+	/**
+	 * 分页
+	 * countpage代表当前页
+	 */
+	public List<Cars> queryByPageservice(Integer countpage){
+		try {
+			Integer begin = (countpage-1)*3-1;
+			Integer end = countpage*3;
+			List<Cars> queryByPage = carsDAO.queryByPage(begin, end);
+			return queryByPage;
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("分页查询失败");
+		}
+	}
+	/**
+	 * 总条数
+	 * count代表总条数
+	 */
+	public Integer myTotopage(){
+		try {
+			Integer count = carsDAO.countDAO();
+			System.out.println("总条数=   "+count);
+			Integer totopage;
+			if(count%3==0){
+				totopage = count/3;
+				System.out.println("可以整%3的总页数"+totopage);
+			}else{
+				totopage = count/3+1;
+				System.out.println("不能整%3的总页数"+totopage);
+			}
+			return totopage;
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("查询总条数失败");
+		}
+	}
+	
+	/**
+	 * 验证注册
+	 */
+	public Cars acountCbrandService(String cbrand){
+		try {
+			cars = carsDAO.acountCbrand(cbrand);
+			if(cars!=null){
+				System.out.println("帐号已存在");
+			}else{
+				System.out.println("账号可用");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException("验证帐号错误");
+		}
+		return cars;
+	}
+}

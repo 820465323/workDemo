@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<!--在当前组件内的子组件中定义一个ref，就可以在当前组件内使
+用this.$refs来获取当前内部定义的ref值，就可以获取子组件内
+部的所有属性-->
+<div id="div1">
+    <catr></catr>
+</div>
+</body>
+<script type="text/javascript">
+
+    //创建子模版对象
+    var cartson = {
+        //创建自定义属性
+        props:['cartson2'],
+        //自定义标签内部属性
+        template:'<h5 @click="add">点击 {{carts2}} 子==={{cartson2}}</h5>',
+        data:function () {
+            return {carts2:1}
+        },
+        methods:{
+            add:function () {
+                this.carts2++;
+            }
+        }
+    };
+
+    //创建cart父模版对象
+    var cart = {
+        template:'<div @click="add"><cartson :cartson2="price"></cartson>父===={{price}}</div>',
+        data:function () {
+            return {price:0}
+        },
+        components:{cartson:cartson},
+        methods:{
+            add:function () {
+                this.price++;
+            },
+        }
+    }
+
+    //创建vue对象
+    var vue = new Vue({
+        el:'#div1',
+        data:{
+            car :[{name:'apple',price:22.5}]
+        },
+        components:{catr:cart}
+    })
+</script>
+</html>

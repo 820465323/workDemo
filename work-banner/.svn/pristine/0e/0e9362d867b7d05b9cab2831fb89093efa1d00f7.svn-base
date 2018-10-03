@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.dao.CarsDAO">
+	
+	<!-- 查询方法 -->
+	<select id="queryAll" resultType="com.baizhi.entity.Cars">
+		select * from c_car
+	</select>
+	
+	<!-- 添加方法 -->
+	<insert id="addCars">
+		<selectKey resultType="Integer" keyProperty="cid" order="BEFORE">
+			select cc.nextval from dual
+		</selectKey>
+			insert into c_car values(cc.nextval,#{cprice},#{cbrand},sysdate)
+	</insert>
+	
+	<!-- 修改方法 -->
+	<update id="updateCars">
+		update c_car set
+		cprice = #{cprice},
+		cbrand = #{cbrand}
+		where cid = #{cid}
+	</update>
+	
+	<!-- 删除方法 -->
+	<delete id="deleteCars">
+		delete from c_car where cid = #{cid}
+	</delete>
+	
+	<!-- 模糊查询品名 -->
+	<select id="queryCbrand" resultType="com.baizhi.entity.Cars">
+		select * from c_car where cbrand like '%'||#{cbrand}||'%'
+	</select>
+	
+	<!-- 批量删除 -->
+	<delete id="deleteAll">
+		delete from c_car where cid in
+		<foreach collection="cid" open="(" item="cid" separator="," close=")">
+			#{cid}
+		</foreach>
+	</delete>
+	
+	<!-- 分页展示 -->
+	<select id="queryByPage" resultType="com.baizhi.entity.Cars">
+		select * from(select c.*,rownum r from c_car c)
+		where r>=#{begin} and r&lt;=#{end}
+	</select>
+	
+	<!-- 总条数 -->
+	<select id="countDAO" resultType="Integer">
+		select count(*) from c_car
+	</select>
+	
+	<!-- 验证注册 -->
+	<select id="acountCbrand" resultType="com.baizhi.entity.Cars">
+		select * from c_car where cbrand = #{cbrand}
+	</select>
+</mapper>

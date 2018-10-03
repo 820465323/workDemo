@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    "use strict";//严格模式
+    /*str = "s2";
+    function one(a) {
+        var str = "s1";
+        console.log(str)
+        console.log('a= '+a);
+    }
+    console.log(str);
+    one(1);
+
+    //参数类型
+    var a = 1;
+    var b = "2";
+    var c = null;
+    var d = true;
+    var e = [1,2,"3",null];
+    var f = {};
+    var g = function () {
+    }
+    var h = [a,b,c,d,e,f,g]
+    h.forEach(function () {
+        console.log(typeof h[0]+' '+typeof h[1]+' '+typeof h[2]+' '+typeof h[3]+' '+typeof h[4]+' '+typeof h[5]+' '+typeof h[6])
+    })
+
+    //时间转换为本地时间格式
+    var tm = new Date();
+    var tm2 = tm.toLocaleString();
+    console.log(tm2);
+    console.log(tm.getFullYear()+"年")//获取年份
+    console.log(tm.getMonth()+1+"月");//获取月份,因为是从0开始取值的,所以需要+1
+    console.log(tm.getDate()+"号");//获取星期
+    console.log(tm.getHours()+'时');//获取小时
+    console.log(tm.getMinutes()+"分");//获取分钟
+    console.log(tm.getSeconds()+"秒");//获取秒数
+     //console.log(Date.now());//时间戳
+
+     //自定义时间格式日期
+    var strdate = "2018-2-1 13:12:11";
+    console.log(new Date(strdate));
+
+    //if else ==代表只判断内容 ===判断内容和数据类型
+    if(1==="1"){
+        console.log('数据类型相同')
+    }else {
+        console.log("数据类型不同");
+    }
+    if(1=="1"){
+        console.log("数据内容相同")
+    }
+    if(undefined){
+        console.log("undefined为false")
+    }
+    one2(1,2);
+    function one2(a,b) {
+        var ab = a*b;
+        if(a*b==2){
+            console.log('a*b='+ab)
+        }
+    }*/
+
+    //三元表达式
+    /*var a = 1;
+    a==1?console.log('true'):console.log('false');
+
+    one(1);
+    function one(a) {
+        a = a || "无效";//a为true时打印a 为false时打印字符串
+        console.log(a);
+    }*/
+
+    //字符串
+    /*var str = "123442211";
+    console.log(str[2]+''+str[1]+''+str[0]);//根据下标去值
+    console.log(str.length);//字符串长度
+    console.log('2第一次出现的下标位置=   '+str.indexOf('2'));//返回字符串第一次出现的下标
+    console.log('1最后一次出现的下标位置=    '+str.lastIndexOf('1'));///返回字符串最后一次出现的下标
+    console.log(str.substring(1,4));//从1下标开始取三个 4-1
+
+    //对数组进行排序
+    var str2 = [1,5,2,6,7,8,3];//直接将字数传放入数组内部
+    //sort() 从小到大排序  reverse() 将数组内容倒叙
+    console.log(str2.sort().reverse().join(' * '));
+    //将数组toString遍历
+    console.log(str2.toString());
+    //join可改变字符串之间的分隔符
+    console.log(str2.join('-'));
+
+    //将字符串迅速转为数组
+    var strs2 = [...str];
+    console.log(strs2.sort().reverse().join(' ~ '));
+
+    //for循环将字符串添加到数组内部
+    var str1 = "46579132165767";
+    var strs3 = [];
+    for(var i = 0;i<str1.length;i++){
+        strs3 += [str1[i]+','];
+    }
+    console.log(strs3)*/
+
+
+    /*var arr = ['b'];
+    //unshift:永远在0下标添加数据
+    //返回值是添加后数组的最近长度
+    arr.unshift('a','c','d');
+    console.log(arr);
+    //shift:永远只删除0下标的数据
+    //返回值是删除的数据
+    var shif = arr.shift();
+    console.log(shif);
+
+    //push:永远只在数组最后一位添加数据
+    //返回值是添加后，数组最近的长度
+     var pusharr = arr.push(5,'e');
+    console.log(pusharr);
+    //pop:永远只删除数组最后一位
+    //返回值是删除的数据
+    var poparr = arr.pop();
+    console.log(poparr);*/
+
+    //返回元素第一次和最后一次出现的下标位置
+    /*var str = [1,2,4,'a','e',1];
+    console.log(str.indexOf(1),str.lastIndexOf(1));*/
+
+    //concat()合并数组
+   /* var str1 = [6,8,7,'c'];
+    var str0 = [8,5,1,4,'d'];
+    var str3 = str1.concat(str0);
+    console.log(str3.sort().reverse().join('-'));
+    //slice:截取数组内指定元素,和String中的subString用法相同,从2下标开始去5-2个值
+    console.log(str3.slice(2,5));*/
+    //splice:手动指定数组删除和添加的元素
+    //从下标0开始删除1一个元素
+    /*var s = str1.splice(0,1);
+    console.log(s);
+    console.log(str1);*/
+    //从下标2开始,删除0个元素,添加两个新元素
+   /* var s2 = str1.splice(2,0,'d','e');
+    console.log(str1);*/
+
+    //json对象
+    /*var json = {name:"five,six",id:"1"};
+    var json1 = {"name":"1,2"};
+
+    //json格式的字符串
+    var json2 = '{"name":"five,six","id":"1"}';
+    //将json字符串转换为json对象
+    var parse = JSON.parse(json2);
+    console.log(parse.name);
+    console.log(json,json1,json2);*/
+
+    //json动态传值
+    /*var s1 = [1,2,3,4,5,6,7];
+    var json = {name:"one",salary:128.2,s1};
+    //json.sex：为json添加一个属性 = 后面为该属性添加的值
+    json.sex = "man";
+    console.log(json);
+    //for in 遍历
+    for(var s in json){
+        console.log(s);//遍历属性
+        console.log(json[s]);//遍历值
+    }*/
+
+    //函数
+    /*var str = "asdasdasd";
+    one(str,1)
+    //arguments为传递的对象
+    function one(a,b) {
+        console.log(arguments[0]);
+    }*/
+
+    //this：永远指向调用者
+    /*one();
+    function one() {
+        console.log(this)
+    }*/
+
+    //闭包:子函数使用了父函数的元素,所以每次不会重新加载子函数
+    /*function one() {
+        var i = 0;
+        //再次设置此函数,是为了每次调用此方法时,不会重新加载,而是继续使用此作用域
+        return function () {
+            i++;
+            return i;
+        }
+    }
+    var one = one();
+    console.log(one());
+    console.log(one());
+    console.log(one());
+
+    //由于此函数中的元素没有子函数调用,所以每次都会被重新加载
+    function two() {
+        var i = 0;
+            i++;
+            return i;
+    }
+    console.log(two());
+    console.log(two());
+    console.log(two());*/
+
+    /*var arr = [];
+    for(var i = 0;i<5;i++){
+        function ono() {
+            var a = i;
+            return function () {
+                console.log(a);
+            }
+        }
+        arr.push(ono());
+    }
+    arr[0]();
+    arr[1]();
+    arr[2]();
+    arr[3]();
+    arr[4]();*/
+
+    //计时函数
+</script>
+</html>

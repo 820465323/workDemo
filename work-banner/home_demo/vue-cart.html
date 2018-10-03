@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+    //创建购物车
+    if(!localStorage.cartList){
+        //先创建数组,再将数组序列化存放在cartList中
+        var arr = [];
+        localStorage.cartList = JSON.stringify(arr);
+    }else {
+        //如果存在,直接使用
+        let cart = localStorage.cartList;
+        //转换为JSON格式
+        let carList = JSON.parse(cart);
+        //添加商品
+        carList.push({imgUrl:`./footer2.jpg`,goodsId:`goods`,title:`肥皂`,price:21,number:1});
+        carList.push({imgUrl:`./footer2.jpg`,goodsId:`goods1`,title:`肥皂1`,price:22,number:12});
+        carList.push({imgUrl:`./footer2.jpg`,goodsId:`goods2`,title:`肥皂2`,price:23,number:13});
+        console.log(carList);
+        //建立一个商品,以便以下执行时判断是否添加到购物车
+        let goodss = {imgUrl:`./footer2.jpg`,goodsId:`goods3`,title:`肥皂3`,price:24,number:14};
+        //用户循环判断的flag
+        let flag = false;
+        carList.forEach(function (gs) {
+            //如果这个商品存在,则商品数量+1,没有的话则在购物车中添加新商品
+            if(goodss.goodsId == gs.goodsId){
+                flag = true;
+                gs.number++;
+            }
+        });
+        //如果不存在,则是一个新商品
+        if(!flag){
+                carList.push(goodss);
+            }
+            //同步至localStorage中
+            localStorage.cartList = JSON.stringify(carList);
+    }
+</script>
+</html>

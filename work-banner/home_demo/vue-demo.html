@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .one{
+            width: 50px;
+            height: 50px;
+            border: 1px solid white;
+        }
+        .two{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+        .meau{
+            width: 100%;
+            height: 65px;
+            border: 1px solid red;
+        }
+        .fixed{
+            position: fixed;
+            top:0px;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+<div class="div1">
+    <table border="1">
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+        </tr>
+        <!--根据DIV的ID进行取值-->
+        <tr v-for="user in users">
+            <td>{{user.name}} </td>
+            <td>{{user.age}}</td>
+        </tr>
+    </table>
+
+    <!--v-for 循环-->
+    <ul>
+        <li v-for="(user,index) in users">
+            {{user}}
+        </li>
+    </ul>
+
+    <!--v-if v-else判断-->
+    <ul>
+        <li v-if="age!=21">
+            不等于21
+        </li>
+        <li v-else>
+            等于21
+        </li>
+    </ul>
+
+    <!--v-show判断-->
+    <ul>
+        <li v-show="name!='zzw'">不是zzw</li>
+        <li v-show="name=='zzw'">是zzw,{{arr}}</li>
+    </ul>
+</div>
+
+<!--事件-->
+<div class="div2">
+    <a href="javascript:void(0)"
+       style="text-decoration: none;" @click="add(1)">点击
+    </a><br/>
+    {{name}}.{{age}}
+</div>
+
+<!--input v-model练习-->
+<div id="div3">
+    <form action="#">
+        帐号:<input type="text" v-model="user.username"/><!--{{username}}--><br/>
+        密码:<input type="paddword" v-model="user.password"/><!--{{password}}-->
+        <button type="submit" @click="sub">提交</button>{{user}}
+    </form>
+</div>
+
+<!--radio v-model练习-->
+<div id="div4" style="border: 1px solid red">
+    <input type="radio" name="man" value="男" v-model="radio"/>男<br/>
+    <input type="radio" name="woman" value="女" v-model="radio"/>女<br/>{{radio}}
+</div>
+<br/>
+
+<!--checkbox v-model练习-->
+<div id="div5" style="border: 1px solid red">
+    <input type="checkbox" name="" value="西瓜" v-model="check"/><br/>
+    <input type="checkbox" name="" value="苹果" v-model="check"/>苹果<br/>
+    <input type="checkbox" name="" value="香蕉" v-model="check"/>香蕉<br/>
+    <input type="checkbox" name="" value="桃子" v-model="check"/>桃子<br/>
+    {{check}}
+</div>
+<br/>
+
+<!--select v-model练习-->
+<div id="div6" style="border:  1px solid red">
+    <select v-model="sele" multiple>
+        <option value="迈腾">迈腾</option>
+        <option value="朗逸">朗逸</option>
+        <option value="朗镜">朗镜</option>
+    </select>
+    <br/>
+    {{sele}}
+</div>
+<br/>
+
+<!--v-bind :代表v-bind 练习-->
+<div id="div7" style="border: 1px solid red">
+    <input type="text" v-model="styl"/>
+    <h4 :style="styl">Demo</h4>
+    <img :src="url" width="50px" height="50px"/>
+</div>
+<br/>
+
+<!--vue样式练习-->
+<div id="div8">
+     <input type="text" v-model="myClass1">
+     <div :class="[myClass1,myClass2]"></div>
+    <div :class="{one:f1,two:f2}"></div>
+</div>
+<br/>
+
+<!--应用场景练习-->
+<div id="div9" style="border: 1px solid navy;background-color: #dedede">
+    <table border="1px">
+        <tr>
+            <td><input type="checkbox" name="all" v-model="checkAll" @click="demo"/></td>
+            <td>序号</td>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>操作</td>
+        </tr>
+        <tr v-for="(us,index) in user">
+            <!--@click="che([index])"-->   <!--@click="demo(index)"-->
+            <td><input type="checkbox"
+                       v-model="check" name="check" :value="index+1"/></td>
+            <td>{{index}}</td>
+            <td>{{us.name}}</td>
+            <td>{{us.age}}</td>
+            <td>
+                <a href="javascript:void(0)" v-model="check" @click="del(index)">删除</a></td>
+        </tr>
+    </table>
+    {{check}}
+    用户姓名：<input type="text" v-model="user.name">
+    用户年龄：<input type="text" v-model="user.age">
+    <button type="submit" @click="add">添加用户</button><br/>
+</div>
+    <a href="javascript:void(0)" @click="delall">批量删除</a>
+</body>
+
+<!--应用场景练习-->
+<script type="text/javascript">
+
+    /*var str = "123456";
+    var arrs = [];
+    for(var i = 0;i<str.length;i++){
+        arrs+=[str[i]];
+    }
+    console.log('arrs = '+arrs);*/
+
+    var vue = new Vue({
+        el:'#div9',
+        data:{
+            user:[
+                {name:'zzw',age:16},
+                {name:'zzw2',age:17},
+                {name:'zzw3',age:18},
+                {name:'zzw4',age:19},
+                {name:'zzw5',age:20},
+                {name:'zzw6',age:21}
+            ],
+            check:[],//全选框 //判断CheckBox是否选中
+            checkAll:''//子选框*/
+        },
+        methods:{
+            demo:function(){   //全选/反选
+                if(!this.checkAll){
+                   this.user.forEach(function (a,index) {
+                       this.check.push(index+1);
+                   }.bind(this))
+                }else{
+                    this.check=[];
+                }
+            },
+
+            //添加元素
+            add:function () {
+                var use = {};
+                use.name = this.user.name;
+                use.age = this.user.age;
+                this.user.push(use);
+            },
+            //删除元素
+            del:function (index) {
+                console.log(index);
+                //从下标0开始删除1一个元素
+                var s = this.user.splice(index,1);
+
+            },
+
+            //复选框删除
+            che:function (index) {
+                console.log(index);
+                var arr = [];
+                    for(var i = 0;i<index.length;i++){
+                        arr+=[index[i]];
+                    }
+                console.log('arr =   '+arr);
+            }
+        }
+    })
+</script>
+
+<!--vue样式练习-->
+<script>
+    var vv = new Vue({
+        el: "#div8",
+        data: {
+            myClass1: "two one",
+            myClass2: "one",
+            f1: true,
+            f2: true
+        }
+    });
+</script>
+<!--v-bind :代表v-bind 练习-->
+<script type="text/javascript">
+    var vue = new Vue({
+        el:'#div7',
+        data:{
+            styl:'color:red',
+            url:'./images/con-bg_04f25dbf8e.jpg'
+        }
+    })
+</script>
+
+<!--select v-model练习-->
+<script type="text/javascript">
+    var vue = new Vue({
+        el:'#div6',
+        data:{
+            sele:''
+        }
+    })
+</script>
+
+<!--checkbox v-model练习-->
+<script type="text/javascript">
+     var vue = new Vue({
+        el:'#div5',
+         data:{
+            check:[],
+         }
+     });
+</script>
+
+<!--radio v-model练习-->
+<script type="text/javascript">
+    new Vue(
+        {
+            el:'#div4',
+            data:{
+                radio:''
+            }
+        }
+    )
+
+</script>
+
+<!--input v-model练习-->
+<script type="text/javascript">
+    new Vue(
+        //input的v-model练习
+        {
+        el:'#div3',
+        data:{
+           /* username:'',
+            password:'',*/
+            user:{}
+        },
+        methods:{
+            sub:function () {
+                $.get('#',this.user);
+            }
+        }
+    }
+    )
+</script>
+
+<!--vue基础练习-->
+<script type="text/javascript">
+    var vue = new Vue({
+        el:'.div1',
+        data:{
+            name:"zzw",
+            age:"21",
+            arr:[1,2,5,6,8,8],
+            users:[{name:"zzw",age:18},
+                    {name:"zzw2",age:19},
+                    {name:"zzw3",age:20}]
+        }
+    })
+</script>
+
+<!--vue时间和修改参数练习-->
+<script type="text/javascript">
+    var vue = new Vue({
+        el:'.div2',
+        data:{
+            name:"zzw",
+            /*age:21,*/
+            arr:[1,2,5,6,8,8],
+            users:[{name:"zzw",age:18},
+                {name:"zzw2",age:19},
+                {name:"zzw3",age:20}]
+        },
+        //修改参数函数
+        computed:{
+            age:function () {
+                return 99;
+            }
+        },
+        //时间函数
+        methods:{
+            add:function (val) {
+                alert(this+' '+val);
+            }
+        },
+    })
+</script>
+</html>

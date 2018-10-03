@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./vue.js"></script>
+    <script src="node_modules/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--路由入口-->
+    <!--tag:指定标签样式-->
+    <router-link to="/login" tag="div">login</router-link>
+    <router-link to="/users">users</router-link>
+    <!--配置子路由-->
+    <router-link to="/users/userson">userson</router-link>
+    <!--视图区-->
+    <router-view>
+    </router-view>
+</div>
+</body>
+
+<script type="text/javascript">
+    var login = {
+        //template:视图区组件
+        template: `<h6>这是login</h6>`
+    };
+    var users = {
+        template: `<h2>这是users <router-view></router-view></h2>`
+    };
+    var userson = {
+        template:`<h4>这是子路由</h4>`
+    }
+    var index = {
+        template:`<h1>这是首页</h1>`
+    }
+    var rou = new VueRouter({
+        //纯净模式
+        /*mode:'history',*/
+        routes: [{path: '/login', component: login},
+                    {path: '/users', component: users,
+                        children:[{path:'userson',component:userson}]},
+                        //配置默认跳转路径
+                        {path:'/',component:index}]
+    });
+    new Vue({
+        el: '#app',
+        //router:路由对象
+        router: rou
+    })
+</script>
+</html>

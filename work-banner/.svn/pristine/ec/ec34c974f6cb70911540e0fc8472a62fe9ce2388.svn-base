@@ -1,0 +1,149 @@
+package com.baizhi.dao;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.baizhi.entity.Cars;
+import com.baizhi.service.CarsService;
+
+/**
+ * 
+ * @author zzwAdministrator
+ * @Description:测试类
+ * @date2018-6-8下午7:27:05
+ * @update2018-6-8下午7:27:05
+ */
+public class TestCars {
+	ApplicationContext apx = new ClassPathXmlApplicationContext("springContext.xml");
+	CarsDAO carsdao = (CarsDAO)apx.getBean("carsDAO");
+	CarsService carsservice = (CarsService)apx.getBean("CarsService");
+	Cars cars = new Cars();
+	List<Integer> list = new ArrayList<Integer>();
+	
+	/**
+	 * 
+	 * Description:验证注册的实例
+	 * @author zzwAdministrator
+	 * @date 2018-6-9下午5:35:00
+	 */
+	@Test
+	public void test9(){
+		System.out.println(apx);
+		System.out.println("进入测试类");
+		cars = carsservice.acountCbrandService("张旺");
+		System.out.println(cars);
+	}
+	
+	/**
+	 * 
+	 * Description:查询方法
+	 * @author zzwAdministrator
+	 * @date 2018-6-8下午7:27:00
+	 */
+	@Test
+	public void test1(){
+		System.out.println("进入测试类");
+		List<Cars> list = carsservice.queryAll();
+		for(Cars a : list){
+			System.out.println(a);
+		}
+	}
+	
+	/**
+	 * 
+	 * Description:添加方法
+	 * @author zzwAdministrator
+	 * @date 2018-6-8下午7:37:40
+	 */
+	@Test
+	public void test2(){
+		System.out.println("进入测试类");
+		Cars cars = new Cars(null,188798.9,"陶慧雪",new Date());
+		carsservice.addCarService(cars);
+	}
+	
+	/**
+	 * 
+	 * Description:修改方法
+	 * @author zzwAdministrator
+	 * @date 2018-6-8下午7:53:36
+	 */
+	@Test
+	public void test3(){
+		System.out.println("进入测试类");
+		cars.setCprice(888888.88);
+		cars.setCbrand("上汽大众-途观丝绸之路");
+		cars.setCid(21);
+		carsservice.updateCarService(cars);
+	}
+	
+	/**
+	 * 
+	 * Description:删除方法
+	 * @author zzwAdministrator
+	 * @date 2018-6-8下午7:54:35
+	 */
+	@Test
+	public void test4(){
+		System.out.println("进入删除测试");
+		carsservice.deleteCarService(14);
+	}
+	
+	/**
+	 * 
+	 * Description:模糊查询品名方法
+	 * @author zzwAdministrator
+	 * @date 2018-6-8下午8:08:31
+	 */
+	@Test
+	public void test5(){
+		System.out.println("进入模糊查询品名测试");
+		List<Cars> list = carsservice.queryCbrandService("丝绸");
+		for (Cars c : list) {
+			System.out.println(c);
+		}
+	}
+	
+	/**
+	 * 
+	 * Description:批量删除测试
+	 * @author zzwAdministrator
+	 * @date 2018-6-8下午8:55:09
+	 */
+	@Test
+	public void test6(){
+		System.out.println("进入批量删除测试");
+		list.add(35);
+		list.add(37);
+		list.add(39);
+		list.add(41);
+		carsservice.deletAllService(list);
+	}
+	
+	/**
+	 * 
+	 * Description:分页
+	 * @author zzwAdministrator
+	 * @date 2018-6-8下午8:59:58
+	 */
+	@Test
+	public void test7(){
+		System.out.println("进入分页测试");
+		carsservice.queryByPageservice(10);
+		List<Cars> list = carsdao.queryByPage(1, 3);
+		for (Cars c : list) {
+			System.out.println(c);
+		}
+	}
+	
+	@Test
+	public void test8(){
+		System.out.println("进入总条数测试");
+	   carsservice.myTotopage();
+	}
+}

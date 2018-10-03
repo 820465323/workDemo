@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .menu{
+            position: fixed;
+            top: 0px;
+            border: 1px solid red;
+            height: 50px;
+            width: 100%;
+        }
+
+        .car{
+            float: right;
+            margin-right: 50px;
+            border: 1px solid black;
+            width: 50%;
+            height: 50%;
+            display: none;
+            background-color: #dedede;
+
+        }
+
+        .cart_show{
+            display: block;
+
+        }
+
+        .goods{
+            width: 300px;
+            height: 200px;
+            border: 1px solid red;
+            margin-top: 100px;
+        }
+    </style>
+  <script src="./vuex.js"></script>
+  <script src="./vue.js"></script>
+</head>
+<body>
+<div id="div1">
+    <cart></cart>
+    <goods></goods>
+</div>
+</body>
+<script type="text/javascript">
+    const st = new Vuex.Store({
+        state:{
+            cartStatus:false
+        },
+        mutations:{
+            updateCartStatus(state,payload){
+                //如果添加了商品,则将购物车的状态更改为true
+                if(payload){
+                    console.log(payload)
+                    //将商品信息payload存放在localstorage中的购物车对象
+                    st.state.cartStatus = !st.state.cartStatus;
+                    /*setTimeout(function () {
+                        st.state.cartStatus = false;
+                    },2000)*/
+                }else {
+                    st.state.cartStatus = !st.state.cartStatus;
+                }
+            }
+        }
+    });
+
+    //购物车组件
+    var cart = {
+        template:` <div class="menu"><div :class="{car:true,cart_show:this.$store.state.cartStatus}">
+        <div style="border: 1px solid red;width: 200px;height: 200px;"></div></div></div>`,
+
+    };
+
+    //商品组件
+    var goods = {
+        template:`<div class="goods"><a href="javascript:0" @click="addGoods">加入购物车</a></div>`,
+        data(){
+            //返回商品信息
+            return {goods:{imgUrl:`./goods.jpg`,
+                title:`锤子手机`,price:288,number:1}}
+        },
+        methods:{
+            addGoods(){
+                this.$store.commit(`updateCartStatus`,this.goods);
+                console.log(`addGoods = `+this.$store.state.cartStatus);
+                setTimeout(()=>{
+                    this.$store.commit(`updateCartStatus`);
+                },1000);
+            }
+        }
+    };
+
+    var vue = new Vue({
+        el:`#div1`,
+        store:st,
+        components:{cart:cart,goods:goods}
+    })
+</script>
+</html>

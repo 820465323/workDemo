@@ -1,0 +1,51 @@
+package com.baizhi.entity;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class Cars implements Serializable{
+	private Integer cid;
+	public Integer getCid() {
+		return cid;
+	}
+	public void setCid(Integer cid) {
+		this.cid = cid;
+	}
+	public Double getCprice() {
+		return cprice;
+	}
+	public Cars() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Cars(Integer cid, Double cprice, String cbrand, Date ctime) {
+		super();
+		this.cid = cid;
+		this.cprice = cprice;
+		this.cbrand = cbrand;
+		this.ctime = ctime;
+	}
+	@Override
+	public String toString() {
+		return "Cars [cid=" + cid + ", cprice=" + cprice + ", cbrand=" + cbrand
+				+ ", ctime=" + ctime + "]";
+	}
+	public void setCprice(Double cprice) {
+		this.cprice = cprice;
+	}
+	public String getCbrand() {
+		return cbrand;
+	}
+	public void setCbrand(String cbrand) {
+		this.cbrand = cbrand;
+	}
+	public Date getCtime() {
+		return ctime;
+	}
+	public void setCtime(Date ctime) {
+		this.ctime = ctime;
+	}
+	private Double cprice;
+	private String cbrand;
+	private Date ctime;
+}

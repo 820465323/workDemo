@@ -1,0 +1,27 @@
+package com.baizhi.dao;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
+import com.baizhi.entity.Cars;
+
+/**
+ * 
+ * @author zzwAdministrator
+ * @Description:DAO层
+ * @date2018-6-8下午7:05:50
+ * @update2018-6-8下午7:05:50
+ */
+public interface CarsDAO {
+	public List<Cars> queryAll(); //查询方法
+	public void addCars(Cars cars);//添加车辆
+	public void updateCars(Cars cars);//修改方法
+	public void deleteCars(@Param("cid")Integer cid);//删除方法
+	public List<Cars> queryCbrand(@Param("cbrand")String cbrand);//模糊查询品名
+	public void deleteAll(@Param("cid")List<Integer> cid);//批量删除
+	public List<Cars> queryByPage(@Param("begin")Integer begin,
+								  @Param("end")Integer end);//分页展示
+	public Integer countDAO();//总条数
+	public Cars acountCbrand(@Param("cbrand")String cbrand);
+}

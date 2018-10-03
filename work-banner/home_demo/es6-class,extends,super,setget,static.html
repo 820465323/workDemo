@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+<!--extends super constructor-->
+<script type="text/javascript">
+    class Animal{
+        constructor(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        run(){
+            console.log(`动物会跑`)
+        }
+        eat(){
+            console.log(`动物会吃`)
+        }
+        static sleep(){
+            console.log(`动物会睡觉`)
+        }
+    }
+    let ainmal = new Animal(`zzw`,18);
+
+    class Dog extends Animal{
+        constructor(name,age,sex){
+            super(name,age);
+            this.sex = sex;
+        }
+        run(){
+            console.log(`大黄会跑`)
+        }
+        dance(){
+            console.log(`大黄还会跳舞`);
+        }
+    }
+    let dog = new Dog(`大黄`,11,`公`);
+    console.log(ainmal.name);
+    console.log(`阿黄已经`+dog.age+`岁了`);
+    let dance = dog.dance();
+    console.log(dance);
+    console.log(Dog.sleep());
+</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<!--利用当前子组件的对象，分发一个自定义事件，从在
+而在父组件内可以捕获到子组件分发的时间，获取分
+发事件时传递的值 this.$emit(“hehe”,”我是子组件”)-->
+<div id="div1">
+    <catr></catr>
+</div>
+</body>
+<script type="text/javascript">
+
+    //创建子模版对象
+    var cartson = {
+        //自定义标签内部属性
+        template:'<h5 @click="add">H5===={{carts2}}</h5>',
+        data:function () {
+            return {carts2:1}
+        },
+        methods:{
+            add:function () {
+                this.carts2++;
+                this.$emit('emit',this.carts2);
+            }
+        }
+    };
+
+    //创建cart父模版对象
+    var cart = {
+        template:'<div @click="add"><cartson @emit="getemit"></cartson></div>',
+        data:function () {
+            return {price:0}
+        },
+        components:{cartson:cartson},
+        methods:{
+            add:function () {
+                this.price++;
+            },
+            getemit:function (val) {
+                console.log('父carts2 =   '+val);
+            }
+        }
+    }
+
+    //创建vue对象
+    var vue = new Vue({
+        el:'#div1',
+        data:{
+            car :[{name:'apple',price:22.5}]
+        },
+        components:{catr:cart}
+    })
+</script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<!--定义全局对象，利用事件冒泡的规则，绑定父子
+组件的事件关联，子一旦触发事件，就可以将想要传递的
+值放入在定义的全局对象中，而父由于事件冒泡，在子事
+件（赋值操作执行完毕后）,父元素就可以立即获取最新的
+子组件传递的值-->
+<div id="div1">
+    <catr></catr>
+</div>
+</body>
+<script type="text/javascript">
+    //设置一个全局对象
+    var vuex = {};
+
+    //创建子模版对象
+    var cartson = {
+        //自定义标签内部属性
+        template:'<h5 @click="add">点击{{carts2}}</h5>',
+        data:function () {
+            return {carts2:1}
+        },
+        methods:{
+            add:function () {
+                this.carts2++;
+                vuex .age= this.carts2
+            }
+        }
+    };
+
+    //创建cart父模版对象
+    var cart = {
+        template:'<div @click="add"><cartson></cartson></div>',
+        data:function () {
+            return {price:0}
+        },
+        components:{cartson:cartson},
+        methods:{
+            add:function () {
+                this.price++;
+                console.log('父vuex = '+vuex.age)
+            }
+        }
+    }
+
+    //创建vue对象
+    var vue = new Vue({
+        el:'#div1',
+        data:{
+            car :[{name:'apple',price:22.5}]
+        },
+        components:{catr:cart}
+    })
+</script>
+</html>

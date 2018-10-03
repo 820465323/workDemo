@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./vue.js"></script>
+    <script src="node_modules/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+<div id="app">
+    <!--路由入口-->
+    <!--tag:指定标签样式-->
+    <!--resultful 传参-->
+    <router-link to="/login/123" tag="div">login</router-link>
+    <!--query是序列化?拼接传参-->
+    <router-link to="/users?name='zzw'">users</router-link>
+    <!--动态传递 name就是路径-->
+    <router-link :to="{name:'goods',query:{age:18}}">Goods</router-link>
+    <!--配置子路由-->
+    <router-link to="/users/userson">userson</router-link>
+    <!--视图区-->
+    <router-view>
+    </router-view>
+</div>
+</body>
+
+<script type="text/javascript">
+    var login = {
+        //template:视图区组件
+        template: `<h6>{{$route.params.age}}这是login的resultful传参 <a href="javascript:void(0)" @click="goGoods">goGoods</a></h6>`,
+        methods:{
+            goGoods:function () {
+                rou.push({name:'goods',query:{age:'21'}})
+            }
+        }
+    };
+    var users = {
+        template: `<h2>{{$route.query.name}}这是users?拼接的值 <router-view></router-view></h2>`
+    };
+    var userson = {
+        template:`<h4>这是子路由</h4>`
+    }
+    var index = {
+        template:`<h1>这是首页</h1>`
+    }
+    var goods = {
+        template:`<h3>{{$route.query.age}}goods</h3>`
+    }
+    var rou = new VueRouter({
+        //纯净模式
+        /*mode:'history',*/
+        routes: [{path: '/login/:age', component: login},
+                    {path: '/users', component: users,
+                        children:[{path:'userson',component:userson}]},
+                        //配置默认跳转路径
+                        {path:'/',component:index},
+                            {name:'goods',path:'/goods',component:goods}]
+    });
+    new Vue({
+        el: '#app',
+        //router:路由对象
+        router: rou
+    })
+</script>
+</html>

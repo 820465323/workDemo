@@ -1,0 +1,1170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="af091571-fb05-43d4-bfdd-6a323e6160be" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-demo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flex-demo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moment-demo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-demo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-demo/node_modules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-demo/node_modules/connect-redis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-demo/node_modules/express-session" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-demo/node_modules/express" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-demo/node_modules/redis" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io/MySocketPro" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io/vue-demo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io/vue-demo/node_modules" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io/vue-demo/node_modules/vue-router" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io/vue-demo/node_modules/vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiper" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiper/86aihuishou1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiper/88shoujiaopc1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiper/pro2tebieban1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/build" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/config" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/demo" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/account-icon@2x.32d87deb02b3d1c3cc5bcff0c26314ac.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/alipay@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/bg_9b9dcb65ff.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/bg_9b9dcb65ff@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/cart-empty-new.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/cart-empty_@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/cart-updown_8303731e15@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/checkbox-new_631a56a4f6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/con-bg_04f25dbf8e.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/delete-btn-icon_a35bf2437e@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/dialog-gray-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/global-logo-red@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/load.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/smartisan_4ada7fecea.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/smartisan_4ada7fecea@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/user-avatar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/weixinpay@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/img" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/img/cart-updown_8303731e15@2x.7d9dac6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/api" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/assets" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/assets/style" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/common" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/components" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Cart" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Checkout" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Goods" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Home" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Login" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Order" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/User" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/User/children" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/router" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/store" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/utils" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/account-icon@2x.32d87deb02b3d1c3cc5bcff0c26314ac.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/alipay@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/banner-3d-item.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/banner-3d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/bg_9b9dcb65ff.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/bg_9b9dcb65ff@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/cart-empty-new.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/cart-empty_@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/cart-updown_8303731e15@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/checkbox-new_631a56a4f6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/con-bg_04f25dbf8e.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/delete-btn-icon_a35bf2437e@2x.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/dialog-gray-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/global-logo-red@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/load.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/smartisan_4ada7fecea.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/smartisan_4ada7fecea@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/user-avatar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/images/weixinpay@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-demo/bootstrap-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-demo/bootstrap-demo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-demo/bootstrap的安装环境.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-demo@media.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flex-demo/flex-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moment-demo/moment-demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/moment-demo/moment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-demo/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-demo/package-lock.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-demo/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-demo/redis-demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis-demo/redis_session.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io/vue-demo/package-lock.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io/vue-demo/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io/vue-demo/vue-基本语法.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io/vue-demo/vue-路由传参方式.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io/vue-demo/vue-路由基本使用.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io/vue-demo/vue-路由跳转.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/socket-io/vue-demo/vue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiper/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiper/swiper-4.3.5.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swiper/swiper-4.3.5.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/.babelrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/.eslintignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/.eslintrc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/.postcssrc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/build/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/build/check-versions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/build/dev-client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/build/dev-server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/build/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/build/vue-loader.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/build/webpack.base.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/build/webpack.dev.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/build/webpack.prod.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/config/dev.env.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/config/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/config/prod.env.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/css/app.684e1ff6a5e59bf0e3e3306c6652290c.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/css/app.684e1ff6a5e59bf0e3e3306c6652290c.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/svg/arrow.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/svg/jia.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/svg/search.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/svg/shop.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/App.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/api/goods.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/api/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/api/public.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/assets/style/common.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/assets/style/index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/assets/style/mixin.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/assets/style/reset.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/assets/style/theme.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/common/footer.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/common/header.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/components/YButton.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/components/buynum.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/components/mallGoods.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/components/popup.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/components/product.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/components/shelf.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Cart/cart.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Checkout/checkout.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Goods/goods.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Goods/goodsDetails.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Home/home.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Login/login.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Order/order.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Order/payment.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/Order/paysuccess.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/User/children/addressList.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/User/children/aihuishou.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/User/children/coupon.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/User/children/information.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/User/children/order.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/User/children/support.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/User/user.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/page/index.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/router/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/store/action.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/store/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/store/mutation-types.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/store/mutations.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/src/utils/storage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/svg/arrow.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/svg/jia.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/svg/search.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-master/vue-mall-master/static/svg/shop.svg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com/baizhi/dao/carsdao.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com/baizhi" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com/baizhi/dao" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com/baizhi/dao/CarsDAO.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com/baizhi/dao/TestCars.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com/baizhi/entity" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com/baizhi/entity/Cars.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com/baizhi/service" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com/baizhi/service/CarsService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com/baizhi/testajax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/com/baizhi/testajax/TestAjax.java" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="tsconfig.json" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>data</find>
+      <find>route</find>
+      <find>busboy</find>
+      <find>链接</find>
+      <find>admin</find>
+      <find>soc</find>
+      <find>app</find>
+      <find>pr</find>
+      <find>pro</find>
+      <find>prodyuc</find>
+      <find>prodyu</find>
+      <find>prody</find>
+      <find>prod</find>
+      <find>prouct</find>
+      <find>product</find>
+      <find>productI</find>
+      <find>productIm</find>
+      <find>productImg</find>
+      <find>good</find>
+      <find>productImageBig</find>
+      <find>u</find>
+      <find>ongimg</find>
+      <find>id</find>
+      <find>JSON.parse</find>
+      <find>goods</find>
+      <find>v-for</find>
+      <find>get</find>
+      <find>post</find>
+      <find>splic</find>
+      <find>sp</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/day17-mysql/mysqlPro/routes/mysqlUtil.js" />
+        <option value="$PROJECT_DIR$/redis-demo/redis-demo.js" />
+        <option value="$PROJECT_DIR$/redis-demo/redis_session.js" />
+        <option value="$PROJECT_DIR$/koa-demo/koua-demo.js" />
+        <option value="$PROJECT_DIR$/koa-demo/two.txt" />
+        <option value="$PROJECT_DIR$/koa-demo/one.txt" />
+        <option value="$PROJECT_DIR$/koa-demo/async-demo.js" />
+        <option value="$PROJECT_DIR$/koa-demo/koua2-demo.js" />
+        <option value="$PROJECT_DIR$/node-多进程/node-多进程.js" />
+        <option value="$PROJECT_DIR$/node_demo/nodeDemo3/diary.txt" />
+        <option value="$PROJECT_DIR$/home_page/vue_pro/vue_pro/src/components/app.js" />
+        <option value="$PROJECT_DIR$/node_demo/socketIO/socketIO/bin/www.js" />
+        <option value="$PROJECT_DIR$/node_demo/socketIO/socketIO/public/chat.html" />
+        <option value="$PROJECT_DIR$/day17-mongoose/mongo_pro/bin/www.js" />
+        <option value="$PROJECT_DIR$/home_page/myMongoosePro/routes/mongo_config.js" />
+        <option value="$PROJECT_DIR$/home_page/myMongoosePro/routes/index.js" />
+        <option value="$PROJECT_DIR$/day17-mongoose/mongo_pro/public/asdasd.html" />
+        <option value="$PROJECT_DIR$/AjaxAndCss/com/demo.html" />
+        <option value="$PROJECT_DIR$/day17-mysql/mysqlPro/app.js" />
+        <option value="$PROJECT_DIR$/day17-mysql/demo.html" />
+        <option value="$PROJECT_DIR$/day17-mongoose/app.js" />
+        <option value="$PROJECT_DIR$/day17-mongoose/demo.html" />
+        <option value="$PROJECT_DIR$/day17-mongoose/node_modules/mongoose/lib/schema/date.js" />
+        <option value="$PROJECT_DIR$/moment-demo/moment.js" />
+        <option value="$PROJECT_DIR$/moment-demo/moment-demo.html" />
+        <option value="$PROJECT_DIR$/swiper-demo/swiper-demo.html" />
+        <option value="$PROJECT_DIR$/swiper/index.html" />
+        <option value="$PROJECT_DIR$/home_page/vue_pro/vue_pro/config/index.js" />
+        <option value="$PROJECT_DIR$/day17-mongoose/mongo_pro/app.js" />
+        <option value="$PROJECT_DIR$/bootstrap-demo/bootstrap的安装环境.txt" />
+        <option value="$PROJECT_DIR$/flex-demo/flex-demo.html" />
+        <option value="$USER_HOME$/Desktop/test/index.html" />
+        <option value="$PROJECT_DIR$/home_page/vue_pro/vue_pro/index.html" />
+        <option value="$PROJECT_DIR$/socket-io/MySocketPro/public/chat.html" />
+        <option value="$PROJECT_DIR$/socket-io/MySocketPro/bin/www" />
+        <option value="$PROJECT_DIR$/socket-io/vue-demo/vue-resultFul传参.html" />
+        <option value="$PROJECT_DIR$/socket-io/vue-demo/vue-路由跳转.html" />
+        <option value="$PROJECT_DIR$/home_page/vue_pro/vue_pro/src/components/cartMessages.vue" />
+        <option value="$PROJECT_DIR$/home_page/vue_pro/vue_pro/src/components/content.vue" />
+        <option value="$PROJECT_DIR$/home_page/vue_pro/vue_pro/src/components/hart.vue" />
+        <option value="$PROJECT_DIR$/home_page/vue_pro/vue_pro/src/components/productcontent.vue" />
+        <option value="$PROJECT_DIR$/node_demo/day15-上传下载即时通信/upload.html" />
+        <option value="$PROJECT_DIR$/home_demo/vue-图片回显.html" />
+        <option value="$PROJECT_DIR$/day17-mysql/mysqlPro/routes/index.js" />
+        <option value="$PROJECT_DIR$/day17-mongoose/mongo_pro/routes/mongo_config.js" />
+        <option value="$PROJECT_DIR$/day17-mongoose/mongo_pro/public/demo.html" />
+        <option value="$PROJECT_DIR$/day17-mongoose/mongo_pro/routes/index.js" />
+        <option value="$PROJECT_DIR$/home_page/vue_pro/vue_pro/src/main.js" />
+        <option value="$PROJECT_DIR$/home_demo/index.html" />
+        <option value="$PROJECT_DIR$/bootstrap-demo/bootstrap-demo.html" />
+        <option value="$PROJECT_DIR$/bootstrap-demo/bootstrap-demo2.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/bootstrap-demo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/day17-mongoose/mongo_pro/node_modules" />
+    <handled-path value="$PROJECT_DIR$/day17-mongoose/node_modules" />
+    <handled-path value="$PROJECT_DIR$/day17-mysql/mysqlPro/node_modules" />
+    <handled-path value="$PROJECT_DIR$/day17-mysql/node_modules" />
+    <handled-path value="$PROJECT_DIR$/flex-demo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/home_demo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/home_page/vue_pro/vue_pro/node_modules" />
+    <handled-path value="$PROJECT_DIR$/koa-demo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_demo/day15-上传下载即时通信/myFileSecond/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_demo/day15-上传下载即时通信/myPro/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_demo/day15-上传下载即时通信/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_demo/nodeDemo3/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_demo/socketIO/socketIO/node_modules" />
+    <handled-path value="$PROJECT_DIR$/redis-demo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/socket-io/node_modules" />
+    <handled-path value="$PROJECT_DIR$/socket-io/vue-demo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/swiper/node_modules" />
+    <handled-path value="$PROJECT_DIR$/vue-master/vue-mall-master/node_modules" />
+    <handled-path value="$PROJECT_DIR$/webpack_demo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/webpack_demo/socketIO/mySocketPro/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="307" />
+    <option name="y" value="218" />
+    <option name="width" value="909" />
+    <option name="height" value="572" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsCSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CssInvalidAtRule</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work-banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work-banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work-banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work-banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home_page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work-banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work-banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home_page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue_pro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work-banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work-banner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home_page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue_pro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue_pro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\yxdown\work-banner\vue-master" />
+      <recent name="E:\yxdown\work-banner\day17-mongoose\mongo_pro\public" />
+      <recent name="E:\yxdown\work-banner\socket-io\vue-demo" />
+      <recent name="E:\yxdown\work-banner" />
+      <recent name="E:\yxdown\work-banner\home_page\vue_pro\vue_pro\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\yxdown\work-banner\AjaxAndCss\com" />
+      <recent name="E:\yxdown\work-banner\day17-mongoose\mongo_pro\routes" />
+      <recent name="E:\yxdown\work-banner\node_demo\socketIO\socketIO\public" />
+      <recent name="E:\yxdown\work-banner\day17-mongoose\mongo_pro\bin" />
+      <recent name="E:\yxdown\work-banner\node_demo\socketIO\mySocketPro\public\stylesheets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.express_demo.js">
+    <configuration default="false" name="www" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="www" working-dir="$PROJECT_DIR$/socket-io/MySocketPro/bin">
+      <method />
+    </configuration>
+    <configuration default="false" name="upload.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="upload.js" working-dir="$PROJECT_DIR$/node_demo/day15-上传下载即时通信">
+      <method />
+    </configuration>
+    <configuration default="false" name="download_demo.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="download_demo.js" working-dir="$PROJECT_DIR$/node_demo/day15-上传下载即时通信">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/work-banner/home_demo/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="express_demo.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="express_demo.js" working-dir="$PROJECT_DIR$/node_demo/nodeDemo3">
+      <method />
+    </configuration>
+    <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="FirefoxRemoteDebugType" factoryName="Firefox Remote">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" value="" />
+      <option name="filePath" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="false" name="rquest请求模块.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="rquest请求模块.js" working-dir="$PROJECT_DIR$/node_demo/nodeDemo3">
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.rquest请求模块.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.www" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.upload.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.download_demo.js" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.express_demo.js" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.express_demo.js" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.download_demo.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.upload.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.www" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\yxdown\work-banner" />
+          <option name="myCopyRoot" value="E:\yxdown\work-banner" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\yxdown\work-banner" />
+          <option name="myCopyRoot" value="E:\yxdown\work-banner" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af091571-fb05-43d4-bfdd-6a323e6160be" name="Default" comment="" />
+      <created>1533720060663</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533720060663</updated>
+      <workItem from="1533720062592" duration="26065000" />
+      <workItem from="1533778145688" duration="10035000" />
+      <workItem from="1533795487027" duration="1535000" />
+      <workItem from="1533797046167" duration="30708000" />
+      <workItem from="1533901565686" duration="14208000" />
+      <workItem from="1533950453844" duration="5845000" />
+      <workItem from="1533972212055" duration="8503000" />
+      <workItem from="1533991820541" duration="8711000" />
+      <workItem from="1534064069095" duration="18191000" />
+      <workItem from="1534136221799" duration="3139000" />
+      <workItem from="1534144891606" duration="5677000" />
+      <workItem from="1534157040345" duration="15717000" />
+      <workItem from="1534173497197" duration="185000" />
+      <workItem from="1534175223653" duration="233000" />
+      <workItem from="1534226772364" duration="2698000" />
+      <workItem from="1534246337147" duration="16187000" />
+      <workItem from="1534307806817" duration="3895000" />
+      <workItem from="1534320160869" duration="803000" />
+      <workItem from="1534336257247" duration="8446000" />
+      <workItem from="1534394207280" duration="2916000" />
+      <workItem from="1534412786946" duration="869000" />
+      <workItem from="1534417151278" duration="7506000" />
+      <workItem from="1534425174673" duration="482000" />
+      <workItem from="1534425672074" duration="8328000" />
+      <workItem from="1534480013312" duration="4863000" />
+      <workItem from="1534489477128" duration="705000" />
+      <workItem from="1534490199011" duration="4293000" />
+      <workItem from="1534503741244" duration="16230000" />
+      <workItem from="1534566335451" duration="3723000" />
+      <workItem from="1534591533667" duration="14393000" />
+      <workItem from="1534642762474" duration="624000" />
+      <workItem from="1534651917150" duration="37548000" />
+      <workItem from="1534729181215" duration="1945000" />
+      <workItem from="1534735929332" duration="19539000" />
+      <workItem from="1534764297647" duration="486000" />
+      <workItem from="1534764845510" duration="16720000" />
+      <workItem from="1534815844957" duration="45375000" />
+      <workItem from="1534906202922" duration="26922000" />
+      <workItem from="1535024441881" duration="1963000" />
+      <workItem from="1535027495739" duration="5961000" />
+      <workItem from="1535035108292" duration="3715000" />
+      <workItem from="1535088287395" duration="119000" />
+      <workItem from="1535088450775" duration="1133000" />
+      <workItem from="1535110731693" duration="14876000" />
+      <workItem from="1535174164365" duration="2885000" />
+      <workItem from="1535189448278" duration="3085000" />
+      <workItem from="1535197002242" duration="9230000" />
+      <workItem from="2545103638468" duration="136000" />
+      <workItem from="1535294658613" duration="3751000" />
+      <workItem from="1535347111624" duration="1851000" />
+      <workItem from="1535362026687" duration="2895000" />
+      <workItem from="1535368201772" duration="14490000" />
+      <workItem from="1535456137632" duration="8994000" />
+      <workItem from="1535469869310" duration="148000" />
+      <workItem from="1535470928751" duration="22000" />
+      <workItem from="1535505261475" duration="757000" />
+      <workItem from="1535547581256" duration="45000" />
+      <workItem from="1535549594317" duration="197000" />
+      <workItem from="1535550083697" duration="4940000" />
+      <workItem from="1535592517285" duration="137000" />
+      <workItem from="1535603554818" duration="139000" />
+      <workItem from="1535606943424" duration="830000" />
+      <workItem from="1535611476137" duration="1169000" />
+      <workItem from="1535613145571" duration="1002000" />
+      <workItem from="1535678895597" duration="3458000" />
+      <workItem from="1535685574174" duration="388000" />
+      <workItem from="1535773846394" duration="287000" />
+      <workItem from="1535774139518" duration="59000" />
+      <workItem from="1535774223524" duration="2528000" />
+      <workItem from="1535777972692" duration="726000" />
+      <workItem from="1535778741235" duration="186000" />
+      <workItem from="1535778943262" duration="154000" />
+      <workItem from="1535779266618" duration="132000" />
+      <workItem from="1535779925441" duration="1730000" />
+      <workItem from="1535781956136" duration="6372000" />
+      <workItem from="1535800635622" duration="611000" />
+      <workItem from="1535803892322" duration="174000" />
+      <workItem from="1535804189095" duration="12573000" />
+      <workItem from="1535849328489" duration="12437000" />
+      <workItem from="1535896644085" duration="1506000" />
+      <workItem from="1535900721920" duration="2427000" />
+      <workItem from="1535951028420" duration="137000" />
+      <workItem from="1535978783962" duration="249000" />
+      <workItem from="1535987449684" duration="73000" />
+      <workItem from="1536044950892" duration="1091000" />
+      <workItem from="1536049373198" duration="18000" />
+      <workItem from="1536113880225" duration="5124000" />
+      <workItem from="1536125648834" duration="10598000" />
+      <workItem from="1536411184209" duration="1649000" />
+      <workItem from="1536461649790" duration="5733000" />
+      <workItem from="1536477438253" duration="7500000" />
+      <workItem from="1536669504010" duration="446000" />
+      <workItem from="1536755166976" duration="4028000" />
+      <workItem from="1536815943380" duration="434000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="561546000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="307" y="218" width="909" height="572" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31572905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32422587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46165645" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37730062" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39824945" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46625766" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30973452" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3802164" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23025335" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40123457" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bootstrap-demo/bootstrap-demo2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-demo/bootstrap-demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home_demo/demonodejs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_demo/nodeDemo3/rquest请求模块.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_demo/nodeDemo3/express_demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_demo/nodeDemo3/diary.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_demo/nodeDemo2/routes/luyou.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_demo/day15-上传下载即时通信/web_socket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node-多进程/node-多进程.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/build/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="20" column="41" lean-forward="true" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/build/check-versions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/build/dev-client.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/build/dev-server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="58" column="22" lean-forward="true" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/build/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="70" column="1" lean-forward="true" selection-start-line="70" selection-start-column="1" selection-end-line="70" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/build/vue-loader.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="63" column="7" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="88" column="26" lean-forward="true" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/src/api/public.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="45" lean-forward="true" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/src/components/buynum.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/src/components/mallGoods.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="116" column="17" lean-forward="true" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/src/api/goods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/static/svg/arrow.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/demo/wxpay.png" />
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/demo/nginx.conf.png" />
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/demo/alipay.jpeg" />
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/config/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-425">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/config/prod.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/alipay@2x.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/account-icon@2x.32d87deb02b3d1c3cc5bcff0c26314ac.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/bg_9b9dcb65ff@2x.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/cart-empty-new.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/cart-empty_@2x.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/cart-updown_8303731e15@2x.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/checkbox-new_631a56a4f6.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-master/vue-mall-master/dist/static/images/con-bg_04f25dbf8e.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-demo/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-demo/redis_session.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis-demo/redis-demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day17-mongoose/mongo_pro/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1650">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day17-mongoose/mongo_pro/public/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-637">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day17-mongoose/mongo_pro/views/error.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day17-mongoose/mongo_pro/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day17-mongoose/mongo_pro/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day17-mongoose/mongo_pro/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day17-mongoose/mongo_pro/routes/mongo_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day17-mongoose/mongo_pro/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day17-mongoose/mongo_pro/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home_page/vue_pro/vue_pro/src/components/cartMessages.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1500">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

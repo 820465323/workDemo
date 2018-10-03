@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="chat">
+</div>
+</body>
+<script type="text/javascript">
+    //用户访问此页面时默认访问的端口号
+    let ws = new WebSocket("ws://localhost:8888/");
+    ws.onmessage = function (message) {
+        console.log('ws.onmessage =   '+message.data);
+        //给DIV添加内容
+        document.querySelector('#chat').append(message.data);
+    };
+    function sendMes(ms) {
+        //需要将ms传递给所有在长链接下的所有用户
+        console.log('function-ms =  '+ms.data);
+        ws.send(ms);
+    }
+</script>
+</html>

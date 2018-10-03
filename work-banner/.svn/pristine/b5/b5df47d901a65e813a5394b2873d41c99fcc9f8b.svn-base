@@ -1,0 +1,67 @@
+package com.baizhi.testajax;
+
+import java.io.PrintWriter;
+import javax.servlet.http.HttpServletResponse;
+import org.apache.struts2.ServletActionContext;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.baizhi.dao.CarsDAO;
+import com.baizhi.entity.Cars;
+import com.baizhi.service.CarsService;
+import com.google.gson.Gson;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class TestAjax extends ActionSupport{
+	ApplicationContext apx = new ClassPathXmlApplicationContext("springContext.xml");
+	CarsDAO carsdao = (CarsDAO)apx.getBean("carsDAO");
+	CarsService carsservice = (CarsService) apx.getBean("CarsService");
+	
+	private String cbrand;
+	
+	public String getCbrand() {
+		return cbrand;
+	}
+
+	public void setCbrand(String cbrand) {
+		this.cbrand = cbrand;
+	}
+	
+	private Cars cars;
+	public Cars getCars() {
+		return cars;
+	}
+
+	public void setCars(Cars cars) {
+		this.cars = cars;
+	}
+
+	public String testAjax() throws Exception {
+		Thread.sleep(1500);
+		Gson gson = new Gson();
+		System.out.println("已经睡醒..");
+		cars = carsservice.acountCbrandService(cbrand);
+		System.out.println("进入ajax中");
+		if (cars != null) {
+			//创建response响应工具类
+			HttpServletResponse response = ServletActionContext.getResponse();
+			//设置响应格式
+			response.setCharacterEncoding("utf-8");
+			//创建流写入
+			PrintWriter in = response.getWriter();
+			System.out.println(cbrand);
+			System.out.println("帐号已存在");
+			//响应json转换格式
+			in.print(gson.toJson(cbrand));
+			return NONE;
+		} else {
+			HttpServletResponse response = ServletActionContext.getResponse();
+			response.setCharacterEncoding("utf-8");
+			PrintWriter in = response.getWriter();
+			System.out.println(cbrand);
+			System.out.println("帐号可用");
+			in.print(gson.toJson(cbrand));
+			return NONE;
+		}
+	}
+}

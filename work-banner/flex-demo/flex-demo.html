@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            flex-wrap: wrap;
+            width: 200px;
+            height: 200px;
+        }
+       /* .box>div{
+            display: flex;
+        }*/
+        .item{
+            width: 100px;
+            height: 100px;
+            border: 1px solid rebeccapurple;
+            background-color: silver;
+        }
+        .box2{
+            border: 1px solid red;
+            width: 400px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box3{
+            display: flex;
+            border: 1px solid darkblue;
+            width: 200px;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+        }
+        .box4{
+            border: 1px solid seagreen;
+            width: 100px;
+            height: 100px;
+        }
+        .box5{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        html.body{
+            height: 100%;
+        }
+        .box7{
+            flex: 1;
+            /*width: 200px;*/
+        }
+        .box8{
+            flex: 10;
+        }
+    </style>
+</head>
+<body>
+    <!--弹性布局容器-->
+    <!--<div class="box">
+        <div>1
+        <div>11</div><div>111</div></div>
+        <div>2</div>
+        <div>3</div>
+    </div>-->
+
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <hr/>
+    <!--垂直剧中-->
+    <!--    垂直剧中align-items: center;
+            水平居中justify-content: center;-->
+    <div class="box2">
+        <div class="box3">
+            <div class="box4"></div>
+        </div>
+    </div>
+    <hr/>
+    <!--自动填满-->
+    <div class="box5">
+        <div class="box6" style="width: 100px;background-color: silver">1</div>
+        <div class="box7" style="background-color: navajowhite">2</div>
+        <div class="box8" style="background-color: darkcyan">2</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./vue.js"></script>
+    <script src="./node_modules/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+    <div id="div1">
+        <!--创建路由入口-->
+        <router-link to="/index">路由入口</router-link>
+        <router-link to="/users">路由入口2</router-link>
+        <!--创建路由视图区-->
+        <router-view></router-view>
+    </div>
+</body>
+<script type="text/javascript">
+
+    //关联路由与视图
+    var index = {
+        template:`<h4>来到了路由入口</h4>`
+    }
+
+    var users = {
+        template:`<h5>来到了路由入口2</h5>`
+    }
+
+    //创建路由规则
+    var route = new VueRouter({
+        //path:路径 component:JS中定义的对象
+        routes:[{path:`/index`,component:index},{path:`/users`,component:users}]
+    })
+
+    var vue = new Vue({
+        el:`#div1`,
+        //映射路由规则
+        router:route,
+        data:{
+
+        }
+    })
+</script>
+</html>

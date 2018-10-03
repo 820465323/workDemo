@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./vue.js"></script>
+    <script src="./node_modules/vue-router/dist/vue-router.js"></script>
+    <style type="text/css">
+        .router-link-exact-active{
+            color: red;
+        }
+       /* .router-link-active{
+            color: yellow;
+        }*/
+    </style>
+</head>
+<body>
+<div id="div1">
+    <!--创建路由入口-->
+    <!--tag：设置当前格式为div-->
+    <!--/users/index_child   后半部分为子路由-->
+    <!--第一种传值方式 resuful传值-->
+    <router-link to="/index/123" tag="div">index</router-link>
+    <router-link to="/index_child" tag="div">index_child</router-link>
+
+    <!--第二种传值方式 ?拼接-->
+    <router-link to="/users?name=zzw" tag="div">users</router-link>
+
+    <!--第三种传值方式 动态传递对象 name=需要跳转的路径 -->
+    <router-link :to="{name:'ss',params:{age:18}}" tag="div">student</router-link>
+    <!--创建路由视图区-->
+    <router-view></router-view>
+</div>
+</body>
+<script type="text/javascript">
+    //关联路由与视图
+    //<router-view></router-view> 由于该路由定义了子路由 所以在模版中加入此项即可
+    //params:用来接收来自resuful传递的所有值  $route.params.number:获取具体值
+    //@click='goStudent' 定义单击事件
+    var index = {
+        template:`<h4>来到了路由入口 传递的值: {{$route.params.number}}
+        <a href="javascript:void(0)" @click='goStudent'>index跳转student</a><router-view></router-view></h4>`,
+        methods:{
+            goStudent:function () {
+                route.push({name:'ss',params:{age:'张周旺'}});
+            }
+        }
+    }
+
+    var users = {
+        template:`<h5>来到了路由入口2 ?传递的值: {{$route.query.name}}</h5>`
+    }
+
+    var student = {
+        template:`<h6>这是学生路由入口 学生路由传递的值:{{$route.params.age}}</h6>`
+    }
+
+    //配置的子路由
+    var index_child = {
+        template:`<h6>来到了子路由入口</h6>`
+    }
+
+    //创建路由规则
+    var route = new VueRouter({
+        //mode history纯净模式
+        mode:`history`,
+        //path:路径 component:JS中定义的对象 redirect:指定默认路径 children:配置子路由
+        //restful风格的传参:   :number
+        routes:[{path:`/index/:number`,component:index,children:[{path:`/index_child`,component:index_child}]},{path:`/users`,component:users},
+            {path:`/`,redirect:`/index`},{name:`ss`,path:`/student`,component:student}]
+    })
+
+    var vue = new Vue({
+        el:`#div1`,
+        //映射路由规则
+        router:route,
+        data:{
+
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<!--解构赋值
+解构一个对象，在解构的时候为其赋予新的名称或直接将内部的属性获
+取出来;
+-->
+</body>
+<script type="text/javascript">
+    //传统方式
+    var user = {name:'zzw',zge:18};
+    console.log(`user.name = `+user.name);
+
+
+    /*
+     * 解构赋值json
+     * 左边声明操作拆解右边赋值操作,
+     * 右边{}，左边拆解{}，根据key
+     * 来拆解，拆解后直接可以使用拆解出来的key
+     * */
+    //解构赋值方式
+    let  {name,age} = {name:'zzw',age:18};
+    console.log(name,age);
+
+    /*
+     解构赋值数组array
+     使用[]按照下边来拆解右边的赋值操作
+     */
+    //解构赋值数组(数据量少时)
+    let [a,b,c,d,e] = [1,2,3,4,5];
+    console.log(a);
+
+    /*
+    * 复杂数据类型
+     解构复杂对象还是按照上述规则一步步解构，一旦遇到名称相
+     同的key，可以使用:重新命名
+    * */
+    //解构复杂数据类型
+    let name2=`zzw`;
+    let age2 = `18`;
+    let person = {name2:name2,age2:age2};
+    console.log(person);
+
+    //数据交换
+    let a1 = 1;
+    let b1 = 2;
+    let c1 = 3;
+    let d1 = 4;
+    [a1,b1,c1] = [c1,b1,a1];
+    console.log(a1,b1,c1);
+</script>
+</html>

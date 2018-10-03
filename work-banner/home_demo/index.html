@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>home_demo</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script type="text/javascript">
+    //数组排重 新建一个数组 如果值是第一次出现则加入新数组
+    var aa = [1,2,2,4,9,6,7,5,2,3,5,6,5];
+    one(aa.sort());
+    two(aa.sort());
+    three(aa.sort());
+    //数组排重 如果值不是第一次出现则删除
+    function one(arr) {
+        var a2 = [];
+        for(var i = 0;i<arr.length;i++){
+          if(a2.indexOf(arr[i]) == -1){
+            a2.push(arr[i]);
+          }
+        }
+        console.log(a2);
+    }
+
+    //数组排重  同样新建一个数组 判断当前第一次出现的位置是否是i 不是则忽略
+    function two(arr) {
+      var a3 = [];
+      for(var i =0;i<arr.length;i++){
+        if(arr.indexOf(arr[i]) == i){
+          a3.push(arr[i]);
+        }
+      }
+      console.log('a3   =   '+a3);
+    }
+
+    //对象属性去重
+    function three(arr) {
+      var res = [];
+      var data = {};
+      for(var i = 0;i<arr.length;i++){
+          if(!data[arr[i]]){
+            res.push(arr[i]);
+            data[arr[i]] =229292;
+            console.log('data[arr[i]]%%%%%%%%'+data[arr[i]]);
+          }
+      }
+      console.log('res =  '+res);
+    }
+
+    //es6语法中的set去重
+    let arr22 = [1,2,2,2,2,3,3,33,4,4,46,6,7,7,8,9,0];
+    let set = new Set(arr22);
+    console.log('set  =  ',set);
+  </script>
+</html>

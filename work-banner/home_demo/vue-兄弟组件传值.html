@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./vue.js"></script>
+    <script src="node_modules/vue-router/dist/vuex.js"></script>
+    <style type="text/css">
+        .show{
+            display: block;
+        }
+
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <a1></a1>
+        <b1></b1>
+    </div>
+</body>
+<script type="text/javascript">
+    //自定义属性,将购物车状态默认为false,不显示
+    var vuex = {cartStatus:false};
+    var a = {
+        template:`<a href="javascript:void(0)" @click="send()">加入购物车</a>`,
+        methods:{
+            send(){
+                //更改购物车状态
+                vuex.cartStatus = true;
+                console.log(vuex.cartStatus);
+                setTimeout(function () {
+                    vuex.cartStatus = false;
+                    console.log(vuex.cartStatus);
+                },1000)
+            }
+        }
+    }
+    var b = {
+        template: `<div :class="{show:vuex.cartStatus}">我是购物车</div>`,
+        methods:{
+        }
+    }
+
+    var vue = new Vue({
+        el:`#div1`,
+        components:{a1:a,b1:b}
+    })
+</script>
+</html>
